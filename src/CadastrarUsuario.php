@@ -1,6 +1,7 @@
 <?php
 require_once 'conexao.php';
 
+
 $conexao = new DbConnection();
 $conexao = $conexao->connect();
 
@@ -14,4 +15,6 @@ $stmt->bindParam(2, $foto);
 
 $stmt->execute();
 
+echo 'UsuarioCadastrado';
+header('Location: http://localhost/Mandala/');
 ?>
